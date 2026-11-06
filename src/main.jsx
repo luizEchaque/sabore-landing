@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
-const A = '/assets/';
+const A = `${import.meta.env.BASE_URL}assets/`;
 const whats = (text = 'Olá, Sabore! Gostaria de fazer um pedido.') => `https://wa.me/5534996635988?text=${encodeURIComponent(text)}`;
 const money = n => n.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 const products = [

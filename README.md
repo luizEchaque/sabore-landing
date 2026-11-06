@@ -20,6 +20,14 @@ npm run preview
 
 A pasta `dist` contém o site estático pronto para hospedagem.
 
+## GitHub Pages
+
+Endereço: https://luizechaque.github.io/sabore-landing/
+
+O workflow `.github/workflows/deploy-pages.yml` instala as dependências, compila e publica automaticamente a cada push para `main`. O repositório deve usar **Settings → Pages → Source: GitHub Actions**.
+
+O Vite utiliza a base `/sabore-landing/`. A prévia local também deve ser acessada nesse caminho, informado pelo Vite ao iniciar o servidor.
+
 ## Conteúdo e manutenção
 
 - `src/main.jsx`: seções, produtos, valores, sabores e telefone do WhatsApp.
